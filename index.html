@@ -3,113 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugene Dedkov - CV</title>
+    <title>CV - Eugene Dedkov</title>
     <style>
         body {
+            background-color: #e0e0e0; /* Серый фон вокруг CV */
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
+            margin: 0;
+            padding: 0;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
         }
-        .header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
+        .container {
+            background-color: white; /* Белый фон для CV */
+            width: 60%;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
         }
         h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+            background-color: #d3d3d3; /* Светло-серый фон заголовков */
+            padding: 10px;
+            border-radius: 5px;
         }
-        ul {
-            list-style-type: square;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
+        .photo {
+            float: right;
+            width: 150px;
+            border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div>
-            <h1>Eugene Dedkov</h1>
-            <p><strong>Unity Developer (C#)</strong></p>
-            <p>Email: jenik.byg@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
-        </div>
-        <img src="profile.jpg" alt="Profile Photo">
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Photo" class="photo">
+        <h2>Summary</h2>
+        <p>Highly motivated and dedicated Unity Developer with a strong passion for game development...</p>
+        
+        <h2>Education</h2>
+        <ul>
+            <li>Gomel State University named after F. Skorina, Belarus (2008)</li>
+            <li>Gomel State College of Design and Computer Graphics, Belarus (2003)</li>
+        </ul>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>C#, Unity, Git</li>
+            <li>Game mechanics, animations, UI/UX</li>
+            <li>LeoECS, Zenject, UniRx</li>
+            <li>Adobe Photoshop, Figma</li>
+        </ul>
+        
+        <h2>Work Experience</h2>
+        <p><strong>Unity Developer – Azia Development Studio</strong></p>
+        <ul>
+            <li>Worked on <a href="https://github.com/ADS-GAME/Teddy-s-button">Teddy's Button THE GAME</a> (Match-3 ECS-based game)</li>
+            <li>Participated in the development of Diablo Survival</li>
+            <li>Developed <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
+        </ul>
+        
+        <h2>Published Games</h2>
+        <table>
+            <tr>
+                <th>Game</th>
+                <th>Link</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Theater of Senses</td>
+                <td><a href="https://play.google.com/store/apps/details?id=theaterofsenses">Play Store</a></td>
+                <td>A collection of interactive stories...</td>
+            </tr>
+            <tr>
+                <td>Formless</td>
+                <td><a href="https://play.google.com/store/apps/details?id=Formless">Play Store</a></td>
+                <td>A small experimental game...</td>
+            </tr>
+        </table>
+        
+        <h2>Courses & Training</h2>
+        <ul>
+            <li>METANIT.COM – C# (2023)</li>
+            <li>"C# from Zero to Pro"</li>
+            <li>Various self-learning resources</li>
+        </ul>
+        
+        <h2>Career Goals & Expectations</h2>
+        <p>Seeking to gain additional commercial experience...</p>
     </div>
-    
-    <h2>Summary</h2>
-    <p>Highly motivated and dedicated Unity Developer with a strong passion for game development...</p>
-    
-    <h2>Education</h2>
-    <ul>
-        <li>Gomel State University named after F. Skorina, Belarus (2008)</li>
-        <li>Gomel State College of Design and Computer Graphics, Belarus (2003)</li>
-    </ul>
-    
-    <h2>Skills</h2>
-    <ul>
-        <li>C#, Unity, Git</li>
-        <li>Game mechanics, animations, UI/UX</li>
-        <li>LeoECS, Zenject, UniRx</li>
-        <li>Adobe Photoshop, Figma</li>
-    </ul>
-    
-    <h2>Work Experience</h2>
-    <p><strong>Unity Developer – Azia Development Studio</strong></p>
-    <ul>
-        <li>Worked on <a href="https://github.com/ADS-GAME/Teddy-s-button">Teddy's Button THE GAME</a> (Match-3 ECS-based game)</li>
-        <li>Participated in the development of Diablo Survival</li>
-        <li>Developed <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
-    </ul>
-    
-    <h2>Published Games</h2>
-    <table>
-        <tr>
-            <th>Game</th>
-            <th>Link</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Theater of Senses</td>
-            <td><a href="https://play.google.com/store/apps/details?id=com.aziadev.theaterofsenses">Play Store</a></td>
-            <td>A collection of interactive stories...</td>
-        </tr>
-        <tr>
-            <td>Formless</td>
-            <td><a href="https://play.google.com/store/apps/details?id=com.JenyDed.Formless ">Play Store</a></td>
-            <td>A small experimental game...</td>
-        </tr>
-    </table>
-    
-    <h2>Courses & Training</h2>
-    <ul>
-        <li>METANIT.COM – C# (2023)</li>
-        <li>"C# from Zero to Pro"</li>
-        <li>Various self-learning resources</li>
-    </ul>
-    
-    <h2>Career Goals & Expectations</h2>
-    <p>Seeking to gain additional commercial experience...</p>
 </body>
 </html>
