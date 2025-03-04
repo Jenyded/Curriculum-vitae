@@ -1,5 +1,5 @@
 # Curriculum-vitae
-CV
+CV https://jenyded.github.io/YOUR-REPO-NAME/
 # 📝 Eugene Dedkov
 
 ![Profile Photo](profile.jpg)
