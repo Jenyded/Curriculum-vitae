@@ -7,7 +7,7 @@ CV https://jenyded.github.io/Curriculum-vitae/
 
 Welcome to my GitHub Pages CV! You can view it live at:
 
-🔗 [](https://jenyded.github.io/Curriculum-vitae/)
+🔗 https://jenyded.github.io/Curriculum-vitae/
 
 ## About
 Highly motivated and dedicated Unity Developer with a strong passion for game development. 
