@@ -17,9 +17,3 @@ Highly motivated and dedicated Unity Developer with a strong passion for game de
 - Game mechanics, animations, UI/UX
 - LeoECS, Zenject, UniRx
 - Adobe Photoshop, Figma
-
-## Work Experience
-- **Unity Developer – Azia Development Studio**
-  - Worked on [Teddy's Button THE GAME](https://github.com/ADS-GAME/Teddy-s-button) (Match-3 ECS-based game)
-  - Participated in the development of Diablo Survival
-  - Developed [Cell_Game](https://github.com/Jenyded/Cell_Game)
