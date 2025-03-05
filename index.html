@@ -7,8 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
             max-width: 800px;
-            margin: 20px auto;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -26,8 +34,9 @@
             object-fit: cover;
         }
         h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+            background-color: #e0e0e0;
+            padding: 5px;
+            border-radius: 4px;
         }
         ul {
             list-style-type: square;
@@ -48,79 +57,92 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <div>
-            <h1>Eugene Dedkov</h1>
-            <p><strong>Unity Developer (C#)</strong></p>
-            <p>Email: jenik.byg@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
-            <p>Telegram:<a href="https://t.me/Evgenyided">@Evgenyided</a></p>
-            <p>Discord:<a href="https://discord.com/">eugene_ded</a></p>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Eugene Dedkov</h1>
+                <p><strong>Unity Developer (C#)</strong></p>
+                <p>Email: jenik.byg@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
+                <p>Telegram: <a href="https://t.me/Evgenyided">@Evgenyided</a></p>
+                <p>Discord: eugene_ded</p>
+            </div>
+            <img src="profile.jpg" alt="Profile Photo">
         </div>
-        <img src="profile.jpg" alt="Profile Photo">
+        
+        <h2>Summary</h2>
+        <p>Highly motivated Unity Developer with strong C# expertise, experience in game mechanics, animations, UI/UX, and ECS-based architecture.</p>
+        
+        <h2>Education</h2>
+        <ul>
+            <li>Gomel State University, Belarus (2008)</li>
+            <li>Gomel State College of Design and Computer Graphics, Belarus (2003)</li>
+        </ul>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>C#, Unity, .NET, Git</li>
+            <li>Game mechanics, physics, animations, UI/UX</li>
+            <li>LeoECS, Zenject, UniRx</li>
+            <li>Adobe Photoshop, Figma</li>
+            <li>Particle Systems, DOTween, Timeline</li>
+            <li>AdMob integration</li>
+        </ul>
+        
+        <h2>Work Experience</h2>
+        <p><strong>Unity Developer – Azia Development Studio</strong></p>
+        <ul>
+            <li><strong>Teddy's Button THE GAME</strong> (Match-3 ECS-based game)
+                <ul>
+                    <li>Developed core game mechanics using LeoECS.</li>
+                    <li>Implemented UI/UX elements and animations with DOTween.</li>
+                    <li>Integrated ads and in-game monetization via AdMob.</li>
+                    <li><a href="https://github.com/ADS-GAME/Teddy-s-button">GitHub: Teddy's Button</a></li>
+                </ul>
+            </li>
+            <li><strong>Diablo Survival</strong>
+                <ul>
+                    <li>Worked on game logic, enemy AI, and physics simulations.</li>
+                    <li>Designed and implemented UI elements and visual effects.</li>
+                </ul>
+            </li>
+            <li><strong>Cell_Game</strong> (Solo project)
+                <ul>
+                    <li>Developed core mechanics, UI, and animations.</li>
+                    <li><a href="https://github.com/Jenyded/Cell_Game">GitHub: Cell_Game</a></li>
+                </ul>
+            </li>
+            <li><strong>Other Projects</strong>: Various prototypes and mechanics showcased in GitHub repository.</li>
+        </ul>
+        
+        <h2>Published Games</h2>
+        <table>
+            <tr>
+                <th>Game</th>
+                <th>Link</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Theater of Senses</td>
+                <td><a href="https://play.google.com/store/apps/details?id=com.aziadev.theaterofsenses">Play Store</a></td>
+                <td>A collection of interactive stories.</td>
+            </tr>
+            <tr>
+                <td>Formless</td>
+                <td><a href="https://play.google.com/store/apps/details?id=com.JenyDed.Formless">Play Store</a></td>
+                <td>A small experimental game.</td>
+            </tr>
+        </table>
+        
+        <h2>Courses & Training</h2>
+        <ul>
+            <li>METANIT.COM – C# (2023)</li>
+            <li>"C# from Zero to Pro"</li>
+            <li>Various self-learning resources</li>
+        </ul>
+        
+        <h2>Career Goals & Expectations</h2>
+        <p>Seeking to gain additional commercial experience, contribute to an exciting game project, and bring joy to players through engaging gameplay.</p>
     </div>
-    
-    <h2>Summary</h2>
-    <p>Highly motivated Unity Developer with a strong passion for game development and a solid foundation in C# programming. Strong problem-solving skills, a keen eye for aesthetics, and the ability to collaborate effectively in a team environment.</p>
-    
-    <h2>Education</h2>
-    <ul>
-        <li>Gomel State University named after F. Skorina, Belarus (2008)</li>
-        <li>Gomel State College of Design and Computer Graphics, Belarus (2003)</li>
-    </ul>
-    
-    <h2>Skills</h2>
-    <ul>
-        <li>•	Programming: C#, Unity, .NET, Git</li>
-        <li>•	Game Development: Game mechanics, physics, animations, UI/UX</li>
-        <li>•	Architectural Patterns: ECS (LeoECS), Dependency Injection (Zenject), Reactive Programming (UniRx)</li>
-        <li>•	Tools & Software: Unity Editor, Adobe Photoshop, Figma</li>
-        <li>•	VFX & Animation: Particle Systems, Shaders, DOTween, Timeline</li>
-        <li>•	Ads & Monetization: Google AdMob integration</li>
-    </ul>
-    
-    <h2>Work Experience</h2>
-    <p><strong>Unity Developer – Azia Development Studio</strong></p>
-    <div><img src="icon/Azia1.jpg" alt="Azia1"></div> 
-    <ul>
-        <li>Worked on <a href="https://github.com/ADS-GAME/Teddy-s-button">Teddy's Button THE GAME</a> (Match-3 ECS-based game)</li>
-        <div><img src="icon/teddys_button_icon.jpg" alt="Teddy's button"> <img src="icon/teddys_button_icon0.jpg" alt="Teddy's button"></div> 
-        <div><img src="icon/Teddy2.4.jpg" alt="Teddy's button"> <img src="icon/Teddy2.2.jpg" alt="Teddy's button"> <img src="icon/Teddy2.3.jpg" alt="Teddy's button"> <img src="icon/Teddy2.1.jpg" alt="Teddy's button"></div>
-        <li>Participated in the development of Diablo Survival</li>
-        <div><img src="icon/Diablo1.1.jpg" alt="Diablo"> <img src="icon/Diablo1.2.jpg" alt="Diablo1.2"> <img src="icon/Diablo1.3.jpg" alt="Diablo1.3"> <img src="icon/Diablo1.4.jpg"></div>
-        <li>Developed <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
-        <div><img src="icon/Cell_Game_Icon1.png" alt="Cell_Game"> &nbsp;&nbsp;&nbsp;</div>
-        <div><img src="icon/Cell_1.1.jpg" alt="Cell_Game"> <img src="icon/Cell_1.2.jpg" alt="Cell_Game"> <img src="icon/Cell_1.0.jpg" alt="Cell_Game"> <img src="icon/Cell_1.3.jpg" alt="Cell_Game"></div>
-        <li>Developed <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
-    </ul>
-    
-    <h2>Published Games</h2>
-    <table>
-        <tr>
-            <th>Game</th>
-            <th>Link</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Theater of Senses <div><img src="icon/Theater1.jpg" alt="Theater"></div></td>
-            <td><a href="https://play.google.com/store/apps/details?id=com.aziadev.theaterofsenses">Play Store</a></td>
-            <td>A collection of interactive stories...</td>
-        </tr>
-        <tr>
-            <td>Formless <div><img src="icon/Formless_icon1.png" alt="Formless"></div></td>
-            <td><a href="https://play.google.com/store/apps/details?id=com.JenyDed.Formless ">Play Store</a></td>
-            <td>A small experimental game...</td>
-        </tr>
-    </table>
-    
-    <h2>Courses & Training</h2>
-    <ul>
-        <li>METANIT.COM – C# (2023)</li>
-        <li>"C# from Zero to Pro"</li>
-        <li>Various self-learning resources</li>
-    </ul>
-    
-    <h2>Career Goals & Expectations</h2>
-    <p>Seeking to gain additional commercial experience...</p>
 </body>
 </html>
