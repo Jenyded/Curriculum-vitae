@@ -4,7 +4,7 @@
 
 🔗 [View CV Online](https://jenyded.github.io/Curriculum-vitae/)
 
-![Profile Photo](profile.jpg)
+![Profile Photo](icon/img_fotoJen.png)
 
 ### About
 Highly motivated and dedicated Unity Developer with a strong passion for game development. Experienced in developing game mechanics, UI/UX, and optimizing performance using ECS.
