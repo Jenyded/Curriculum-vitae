@@ -18,4 +18,4 @@ Highly motivated and dedicated Unity Developer with a strong passion for game de
 - **Ads & Monetization:** Google AdMob integration
 
 ### Repository
-[🔙 Back to Repository](https://github.com/Jenyded/Curriculum-vitae)
+[🔙 Back to Repository](https://github.com/Jenyded/Curriculum-vitae/)
