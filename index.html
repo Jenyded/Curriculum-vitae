@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +13,17 @@
       min-height: 100vh;
       margin: 0;
       padding: 20px;
+      font-family: Arial, sans-serif;
     }
 
     .cv-container {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       width: 100%;
       background-color: #f0f0f0;
-      padding: 20px;
+      padding: 25px;
       border: 1px solid #ddd;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 
     .header {
@@ -35,15 +34,19 @@
     }
 
     .header img {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
     }
 
+    .contact p {
+      margin: 4px 0;
+    }
+
     h2 {
       border-bottom: 2px solid #333;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
       background-color: #e0e0e0;
       padding: 10px;
       border-radius: 5px;
@@ -51,6 +54,7 @@
 
     ul {
       list-style-type: square;
+      padding-left: 20px;
     }
 
     table {
@@ -59,22 +63,17 @@
       margin-top: 10px;
     }
 
-    th,
-    td {
+    th, td {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: left;
+      vertical-align: top;
     }
 
     th {
       background-color: #f4f4f4;
     }
 
-    .contact p {
-      margin: 2px 0;
-    }
-
-    /* --- Стили для изображений проектов --- */
     .work-images {
       display: flex;
       flex-wrap: wrap;
@@ -86,14 +85,14 @@
     }
 
     .work-images img {
-      width: 88px;
-      height: 175px;
+      width: 88px !important;
+      height: 175px !important;
       object-fit: cover;
       border: 1px solid #aaa;
       border-radius: 4px;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
-      flex-shrink: 0;
+      flex-shrink: 0 !important;
     }
 
     .work-images img:hover {
@@ -101,14 +100,7 @@
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
     }
 
-    /* --- Адаптивность для изображений --- */
-    @media (max-width: 1024px) {
-      .work-images img {
-        width: 30%;
-        height: 150px;
-      }
-    }
-
+    /* --- Responsive Styles --- */
     @media (max-width: 768px) {
       body {
         padding: 10px;
@@ -132,22 +124,15 @@
 
       h2 {
         font-size: 1.2em;
-        padding: 8px;
       }
 
-      table,
-      th,
-      td {
+      table, th, td {
         font-size: 14px;
       }
 
-      ul {
-        padding-left: 20px;
-      }
-
       .work-images img {
-        width: 45%;
-        height: 150px;
+        width: 70px !important;
+        height: 140px !important;
       }
     }
 
@@ -159,129 +144,135 @@
 
       h2 {
         font-size: 1em;
-        padding: 6px;
       }
 
       .contact p {
         font-size: 14px;
       }
 
-      table,
-      th,
-      td {
+      table, th, td {
         font-size: 12px;
       }
 
       .work-images img {
-        width: 48%;
-        height: 130px;
+        width: 60px !important;
+        height: 120px !important;
       }
     }
   </style>
 </head>
-
 <body>
   <div class="cv-container">
     <div class="header">
       <div class="contact">
         <h1>Eugene Dedkov</h1>
-        <p><strong>Unity Developer (C#)</strong></p>
-        <p>Email: jenik.byg@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
+        <p><strong>Unity Developer (Unity/C#)</strong></p>
+        <p><a href="tel:+375293856467">+375293856467</a></p>
+        <p>Email: <a href="mailto:jenik.byg@gmail.com">jenik.byg@gmail.com</a></p>
         <p>Telegram: <a href="https://t.me/Evgenyided">@Evgenyided</a></p>
         <p>Discord: eugene_ded</p>
       </div>
-      <img src="icon/img_fotoJen.png" alt="Eugene Dedkov photo">
+      <img src="icon/img_fotoV5.jpg" alt="Eugene Dedkov">
     </div>
 
-    <h2>Summary</h2>
-    <p>Highly motivated Unity Developer with a strong passion for game development and a solid foundation in C# programming.
-      Strong problem-solving skills, a keen eye for aesthetics, and the ability to collaborate effectively in a team environment.</p>
+    <h2>Personal Information</h2>
+    <p>Place of birth/residence: Republic of Belarus</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
+    <p>Work format: Remote, flexible schedule, full-time</p>
+    <p>Willing to travel for work if necessary</p>
 
     <h2>Education</h2>
     <ul>
-      <li>Gomel State University named after F. Skorina, Belarus</li>
-      <li>Gomel State College of Design and Computer Graphics, Belarus</li>
+      <li>Higher Education</li>
+      <li>Gomel State University named after F. Skorina, Gomel, Belarus (2008)</li>
+      <li>Gomel State College of Design and Computer Graphics, Gomel, Belarus (2003)</li>
     </ul>
+
+    <h2>About Me</h2>
+    <p>
+      I am an energetic and goal-oriented specialist, constantly improving my skills and exploring new technologies.
+      I enjoy solving complex problems and achieving tangible results. I adapt quickly to new challenges and projects.
+      I am looking for a team of professionals where I can work productively and share experience with passionate colleagues.
+      I have participated in several game development projects, some of which received high user ratings on Google Play.
+    </p>
 
     <h2>Skills</h2>
     <ul>
-      <li>Programming: C#, Unity, .NET, Git</li>
-      <li>Game Development: Game mechanics, physics, animations, UI/UX</li>
-      <li>Architectural Patterns: ECS (LeoECS), Dependency Injection (Zenject), Reactive Programming (UniRx)</li>
-      <li>Tools & Software: Unity Editor, Adobe Photoshop, Figma</li>
-      <li>VFX & Animation: Particle Systems, Shaders, DOTween, Timeline</li>
-      <li>Ads & Monetization: Google AdMob integration</li>
+      <li><b>C#</b>, <b>Unity</b>, <b>Git</b>, <b>Photoshop</b>, <b>Figma</b></li>
+      <li>Game development in C# with Unity Engine.</li>
+      <li>Understanding of OOP and SOLID principles.</li>
+      <li>Developing gameplay mechanics such as character control, object physics, and interactions.</li>
+      <li>Creating animations for characters and objects using Unity tools and DOTween.</li>
+      <li>Cutscene creation using DOTween and Timeline.</li>
+      <li>Designing and implementing user interfaces (UI): buttons, windows, dialogs, etc.</li>
+      <li>Developing visual effects such as particles, light distortions, and shaders.</li>
+      <li>Integrating gameplay, UI, animations, and effects into cohesive experiences.</li>
+      <li>AdMob integration for in-game advertising.</li>
+      <li>Experience with LeoECS (Entity Component System pattern), Zenject, and UniRx.</li>
+      <li>Strong sense of visual aesthetics, supported by an art school diploma with honors.</li>
+      <li>Writing technical documentation and articles (published in several magazines across three countries).</li>
+    </ul>
+
+    <h2>Courses</h2>
+    <p>Completed multiple courses, tutorials, and materials from reputable online sources:</p>
+    <ul>
+      <li>METANIT.COM – C# (2023)</li>
+      <li>“C# from Zero to Pro”</li>
+      <li>Roman Sakutin – GameDev</li>
+      <li>SimpleCode – C#</li>
     </ul>
 
     <h2>Work Experience</h2>
-
     <p><strong>Unity Developer – Azia Development Studio</strong></p>
-    <div><img src="icon/Azia1.jpg" alt="Azia Development Studio Logo"></div>
+    <div><img src="icon/Azia1.jpg" alt="Azia Development Studio"></div>
 
-    <ul>
-      <li>
-        <strong>Teddy's Button THE GAME</strong> (Match-3 ECS-based game)
-        <div class="work-images">
-          <img src="icon/TeddyB_3.1.jpg" alt="Teddy's button">
-          <img src="icon/TeddyB_3.2.jpg" alt="Teddy's button">
-          <img src="icon/TeddyB_3.3.jpg" alt="Teddy's button">
-          <img src="icon/TeddyB_3.4.jpg" alt="Teddy's button">
-          <img src="icon/TeddyB_3.5.jpg" alt="Teddy's button">
-        </div>
-        <ul>
-          <li>Developed core game mechanics using LeoECS for improved performance.</li>
-          <li>Implemented UI/UX elements and animations with DOTween.</li>
-          <li>Integrated ads and in-game monetization via AdMob.</li>
-          <li>GitHub: <a href="https://github.com/ADS-GAME/Teddy-s-button">Teddy's Button</a></li>
-        </ul>
-      </li>
+    <p>◆ Team development of <b>Teddy’s Button THE GAME</b> (Match-3 ECS-based project)</p>
+    <p>GitHub (restricted access): <a href="https://github.com/ADS-GAME/Teddy-s-button">https://github.com/ADS-GAME/Teddy-s-button</a></p>
+    <p>Demo: <a href="https://teddys-button.for-customers.com/">https://teddys-button.for-customers.com/</a></p>
 
-      <li>
-        <strong>Diablo Survival</strong>
-        <div class="work-images">
-          <img src="icon/Diablo2.1.jpg" alt="Diablo">
-          <img src="icon/Diablo2.2.jpg" alt="Diablo">
-          <img src="icon/Diablo2.3.jpg" alt="Diablo">
-          <img src="icon/Diablo2.4.jpg" alt="Diablo">
-          <img src="icon/Diablo2.5.jpg" alt="Diablo">
-        </div>
-        <ul>
-          <li>Worked on game logic, enemy AI, and physics simulations.</li>
-          <li>Designed and implemented UI elements and visual effects.</li>
-          <li>GitHub: <a href="https://github.com/YanPodsadchik/DiabloSurvival">DiabloSurvival</a></li>
-        </ul>
-      </li>
+    <div class="work-images">
+      <img src="icon/TeddyB_3.1.jpg" alt="Teddy's button">
+      <img src="icon/TeddyB_3.2.jpg" alt="Teddy's button">
+      <img src="icon/TeddyB_3.3.jpg" alt="Teddy's button">
+      <img src="icon/TeddyB_3.4.jpg" alt="Teddy's button">
+      <img src="icon/TeddyB_3.5.jpg" alt="Teddy's button">
+    </div>
 
-      <li>
-        <strong>Mria</strong> (prototype)
-        <div class="work-images">
-          <img src="icon/Mria2.1.jpg" alt="Mria">
-          <img src="icon/Mria2.2.jpg" alt="Mria">
-          <img src="icon/Mria2.3.jpg" alt="Mria">
-          <img src="icon/Mria2.4.jpg" alt="Mria">
-          <img src="icon/Mria2.5.jpg" alt="Mria">
-        </div>
-        <ul>
-          <li>Prototyped mechanics, player control and gameplay loops.</li>
-        </ul>
-      </li>
+    <p>◆ Team development of <b>Diablo Survival</b></p>
+    <p>Initial code repo: <a href="https://github.com/Jenyded/D_Survial_Game">https://github.com/Jenyded/D_Survial_Game</a></p>
+    <p>Team repo (restricted): <a href="https://github.com/YanPodsadchik/DiabloSurvival">https://github.com/YanPodsadchik/DiabloSurvival</a></p>
 
-      <li>
-        <strong>Cell_Game</strong> (prototype)
-        <div class="work-images">
-          <img src="icon/Cell_2.1.jpg" alt="Cell_Game">
-          <img src="icon/Cell_2.2.jpg" alt="Cell_Game">
-          <img src="icon/Cell_2.3.jpg" alt="Cell_Game">
-          <img src="icon/Cell_2.4.jpg" alt="Cell_Game">
-          <img src="icon/Cell_2.5.jpg" alt="Cell_Game">
-        </div>
-        <ul>
-          <li>Developed core mechanics, UI, and animations.</li>
-          <li>GitHub: <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
-        </ul>
-      </li>
-    </ul>
+    <div class="work-images">
+      <img src="icon/Diablo2.1.jpg" alt="Diablo">
+      <img src="icon/Diablo2.2.jpg" alt="Diablo">
+      <img src="icon/Diablo2.3.jpg" alt="Diablo">
+      <img src="icon/Diablo2.4.jpg" alt="Diablo">
+      <img src="icon/Diablo2.5.jpg" alt="Diablo">
+    </div>
+
+    <p>◆ Large team project <b>MRIA</b> — sandbox RPG with sci-fi survival mechanics.</p>
+    <p>Team GitHub (restricted access): <a href="https://github.com/Pestarzt0011/SHM">https://github.com/Pestarzt0011/SHM</a></p>
+
+    <div class="work-images">
+      <img src="icon/Mria2.1.jpg" alt="Mria">
+      <img src="icon/Mria2.2.jpg" alt="Mria">
+      <img src="icon/Mria2.3.jpg" alt="Mria">
+      <img src="icon/Mria2.4.jpg" alt="Mria">
+      <img src="icon/Mria2.5.jpg" alt="Mria">
+    </div>
+
+    <p>◆ Game prototype <b>Cell_Game</b></p>
+    <p>GitHub: <a href="https://github.com/Jenyded/Cell_Game">https://github.com/Jenyded/Cell_Game</a></p>
+
+    <div class="work-images">
+      <img src="icon/Cell_2.1.jpg" alt="Cell_Game">
+      <img src="icon/Cell_2.2.jpg" alt="Cell_Game">
+      <img src="icon/Cell_2.3.jpg" alt="Cell_Game">
+      <img src="icon/Cell_2.4.jpg" alt="Cell_Game">
+      <img src="icon/Cell_2.5.jpg" alt="Cell_Game">
+    </div>
+
+    <p>◆ Other projects and prototypes available on GitHub – <a href="https://github.com/Jenyded">Jenyded</a></p>
 
     <h2>Published Games</h2>
     <table>
@@ -291,32 +282,27 @@
         <th>Description</th>
       </tr>
       <tr>
-        <td>Theater of Senses
-          <div><img src="icon/Theater1.jpg" alt="Theater"></div>
-        </td>
+        <td>Theater of Senses <br><img src="icon/Theater1.jpg" alt="Theater"></td>
         <td><a href="https://play.google.com/store/apps/details?id=com.aziadev.theaterofsenses">Play Store</a></td>
-        <td>A collection of interactive stories...</td>
+        <td>A collection of interactive stories where the player can influence events. Developed by Azia Development Studio.</td>
       </tr>
       <tr>
-        <td>Formless
-          <div><img src="icon/Formless_icon1.png" alt="Formless"></div>
-        </td>
+        <td>Formless <br><img src="icon/Formless_icon1.png" alt="Formless"></td>
         <td><a href="https://play.google.com/store/apps/details?id=com.JenyDed.Formless">Play Store</a></td>
-        <td>A small experimental game...</td>
+        <td>
+          A small experimental Android game developed as a showcase of mechanics such as movement, scoring, menu options, and skeletal animation.
+          Gained experience working with Google Console settings and publication process.
+        </td>
       </tr>
     </table>
 
-    <h2>Courses & Training</h2>
-    <ul>
-      <li>METANIT.COM – C# (2023)</li>
-      <li>"C# from Zero to Pro"</li>
-      <li>Various self-learning resources</li>
-    </ul>
+    <h2>Career Goals</h2>
+    <p>
+      I aim to further develop my skills in commercial game development, participate in engaging projects, and work in a professional, creative team.
+      My goal is to create high-quality games that bring enjoyment and positive emotions to players.
+    </p>
 
-    <h2>Career Goals & Expectations</h2>
-    <p>Seeking to gain additional commercial experience, contribute to creative projects, and grow as a Unity developer
-      by exploring advanced techniques and optimization approaches.</p>
+    <p><a href="https://jenyded.github.io/Curriculum-vitae/">HTML Page</a></p>
   </div>
 </body>
-
 </html>
