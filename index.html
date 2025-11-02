@@ -2,253 +2,321 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugene Dedkov - CV</title>
-    <style>
-        body {
-            background-color: #a0a0a0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eugene Dedkov - CV</title>
+  <style>
+    body {
+      background-color: #a0a0a0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
 
-        .cv-container {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            width: 100%;
-            background-color: #f0f0f0;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    .cv-container {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-        .header img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            background-color: #e0e0e0;
-            padding: 10px;
-            border-radius: 5px;
-        }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      background-color: #e0e0e0;
+      padding: 10px;
+      border-radius: 5px;
+    }
 
-        ul {
-            list-style-type: square;
-        }
+    ul {
+      list-style-type: square;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
 
-        th {
-            background-color: #f4f4f4;
-        }
+    th {
+      background-color: #f4f4f4;
+    }
 
-        .contact p {
-            margin: 2px 0;
-        }
+    .contact p {
+      margin: 2px 0;
+    }
 
-        /* --- Адаптивность для мобильных устройств --- */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
+    /* --- Стили для изображений проектов --- */
+    .work-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 8px;
+      margin: 12px 0 20px 0;
+      padding: 0;
+    }
 
-            .cv-container {
-                padding: 15px;
-            }
+    .work-images img {
+      width: 88px;
+      height: 175px;
+      object-fit: cover;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      flex-shrink: 0;
+    }
 
-            .header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+    .work-images img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+    }
 
-            .header img {
-                margin-top: 10px;
-                width: 100px;
-                height: 100px;
-            }
+    /* --- Адаптивность для изображений --- */
+    @media (max-width: 1024px) {
+      .work-images img {
+        width: 30%;
+        height: 150px;
+      }
+    }
 
-            h2 {
-                font-size: 1.2em;
-                padding: 8px;
-            }
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
 
-            table,
-            th,
-            td {
-                font-size: 14px;
-            }
+      .cv-container {
+        padding: 15px;
+      }
 
-            ul {
-                padding-left: 20px;
-            }
-        }
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
-        @media (max-width: 480px) {
-            .header img {
-                width: 80px;
-                height: 80px;
-            }
+      .header img {
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+      }
 
-            h2 {
-                font-size: 1em;
-                padding: 6px;
-            }
+      h2 {
+        font-size: 1.2em;
+        padding: 8px;
+      }
 
-            .contact p {
-                font-size: 14px;
-            }
+      table,
+      th,
+      td {
+        font-size: 14px;
+      }
 
-            table,
-            th,
-            td {
-                font-size: 12px;
-            }
-        }
-    </style>
+      ul {
+        padding-left: 20px;
+      }
+
+      .work-images img {
+        width: 45%;
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header img {
+        width: 80px;
+        height: 80px;
+      }
+
+      h2 {
+        font-size: 1em;
+        padding: 6px;
+      }
+
+      .contact p {
+        font-size: 14px;
+      }
+
+      table,
+      th,
+      td {
+        font-size: 12px;
+      }
+
+      .work-images img {
+        width: 48%;
+        height: 130px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="cv-container">
-        <div class="header">
-            <div class="contact">
-                <h1>Eugene Dedkov</h1>
-                <p><strong>Unity Developer (C#)</strong></p>
-                <p>Email: jenik.byg@gmail.com</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
-                <p>Telegram: <a href="https://t.me/Evgenyided">@Evgenyided</a></p>
-                <p>Discord: eugene_ded</p>
-            </div>
-            <img src="icon/img_fotoJen.png" alt="icon/img_fotoJen.png"> 
-        </div>
-        <h2>Summary</h2>
-        <p>Highly motivated Unity Developer with a strong passion for game development and a solid foundation in C# programming.
-            Strong problem-solving skills, a keen eye for aesthetics, and the ability to collaborate effectively in a team environment.</p>
-        <h2>Education</h2>
-        <ul>
-            <li>Gomel State University named after F. Skorina, Belarus</li>
-            <li>Gomel State College of Design and Computer Graphics, Belarus</li>
-        </ul>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: C#, Unity, .NET, Git</li>
-            <li>Game Development: Game mechanics, physics, animations, UI/UX</li>
-            <li>Architectural Patterns: ECS (LeoECS), Dependency Injection (Zenject), Reactive Programming (UniRx)</li>
-            <li>Tools & Software: Unity Editor, Adobe Photoshop, Figma</li>
-            <li>VFX & Animation: Particle Systems, Shaders, DOTween, Timeline</li>
-            <li>Ads & Monetization: Google AdMob integration</li>
-        </ul>
-        <h2>Work Experience</h2>
-        <p><strong>Unity Developer – Azia Development Studio</strong></p>
-        <div><img src="icon/Azia1.jpg" alt="Azia1"></div>
-        <ul>
-            <li>
-                Teddy's Button THE GAME (Match-3 ECS-based game)
-                <div>
-                    <img src="icon/teddys_button_icon.jpg" alt="Teddy's button">
-                    <img src="icon/teddys_button_icon0.jpg" alt="Teddy's button">
-                </div>
-                <div>
-                    <img src="icon/Teddy2.4.jpg" alt="Teddy's button">
-                    <img src="icon/Teddy2.2.jpg" alt="Teddy's button">
-                    <img src="icon/Teddy2.3.jpg" alt="Teddy's button">
-                    <img src="icon/Teddy2.1.jpg" alt="Teddy's button">
-                </div>
-                <ul>
-                    <li>Developed core game mechanics using LeoECS for improved performance.</li>
-                    <li>Implemented UI/UX elements and animations with DOTween.</li>
-                    <li>Integrated ads and in-game monetization via AdMob.</li>
-                    <li>GitHub: <a href="https://github.com/ADS-GAME/Teddy-s-button">Teddy's Button</a></li>
-                </ul>
-            </li>
-            <li>
-                Diablo Survival
-                <div>
-                    <img src="icon/Diablo1.1.jpg" alt="Diablo">
-                    <img src="icon/Diablo1.2.jpg" alt="Diablo1.2">
-                    <img src="icon/Diablo1.3.jpg" alt="Diablo1.3">
-                    <img src="icon/Diablo1.4.jpg">
-                </div>
-                <ul>
-                    <li>Worked on game logic, enemy AI, and physics simulations.</li>
-                    <li>Designed and implemented UI elements and visual effects.</li>
-                    <li>GitHub: <a href="https://github.com/YanPodsadchik/DiabloSurvival">DiabloSurvival</a></li>
-                </ul>
-            </li>
-            <li>
-                Cell_Game (prototype)
-                <div>
-                    <img src="icon/Cell_Game_Icon1.png" alt="Cell_Game"> &nbsp;&nbsp;&nbsp;
-                </div>
-                <div>
-                    <img src="icon/Cell_1.1.jpg" alt="Cell_Game">
-                    <img src="icon/Cell_1.2.jpg" alt="Cell_Game">
-                    <img src="icon/Cell_1.0.jpg" alt="Cell_Game">
-                    <img src="icon/Cell_1.3.jpg" alt="Cell_Game">
-                </div>
-                <ul>
-                    <li>Developed core mechanics, UI, and animations.</li>
-                    <li>GitHub: <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
-                </ul>
-            </li>
-        </ul>
-        <h2>Published Games</h2>
-        <table>
-            <tr>
-                <th>Game</th>
-                <th>Link</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Theater of Senses <div><img src="icon/Theater1.jpg" alt="Theater"></div>
-                </td>
-                <td><a href="https://play.google.com/store/apps/details?id=com.aziadev.theaterofsenses">Play Store</a></td>
-                <td>A collection of interactive stories...</td>
-            </tr>
-            <tr>
-                <td>Formless <div><img src="icon/Formless_icon1.png" alt="Formless"></div>
-                </td>
-                <td><a href="https://play.google.com/store/apps/details?id=com.JenyDed.Formless">Play Store</a></td>
-                <td>A small experimental game...</td>
-            </tr>
-        </table>
-        <h2>Courses & Training</h2>
-        <ul>
-            <li>METANIT.COM – C# (2023)</li>
-            <li>"C# from Zero to Pro"</li>
-            <li>Various self-learning resources</li>
-        </ul>
-        <h2>Career Goals & Expectations</h2>
-        <p>Seeking to gain additional commercial experience...</p>
+  <div class="cv-container">
+    <div class="header">
+      <div class="contact">
+        <h1>Eugene Dedkov</h1>
+        <p><strong>Unity Developer (C#)</strong></p>
+        <p>Email: jenik.byg@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/eugene-dedkov-039b63252/">Profile</a></p>
+        <p>Telegram: <a href="https://t.me/Evgenyided">@Evgenyided</a></p>
+        <p>Discord: eugene_ded</p>
+      </div>
+      <img src="icon/img_fotoJen.png" alt="Eugene Dedkov photo">
     </div>
+
+    <h2>Summary</h2>
+    <p>Highly motivated Unity Developer with a strong passion for game development and a solid foundation in C# programming.
+      Strong problem-solving skills, a keen eye for aesthetics, and the ability to collaborate effectively in a team environment.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li>Gomel State University named after F. Skorina, Belarus</li>
+      <li>Gomel State College of Design and Computer Graphics, Belarus</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: C#, Unity, .NET, Git</li>
+      <li>Game Development: Game mechanics, physics, animations, UI/UX</li>
+      <li>Architectural Patterns: ECS (LeoECS), Dependency Injection (Zenject), Reactive Programming (UniRx)</li>
+      <li>Tools & Software: Unity Editor, Adobe Photoshop, Figma</li>
+      <li>VFX & Animation: Particle Systems, Shaders, DOTween, Timeline</li>
+      <li>Ads & Monetization: Google AdMob integration</li>
+    </ul>
+
+    <h2>Work Experience</h2>
+
+    <p><strong>Unity Developer – Azia Development Studio</strong></p>
+    <div><img src="icon/Azia1.jpg" alt="Azia Development Studio Logo"></div>
+
+    <ul>
+      <li>
+        <strong>Teddy's Button THE GAME</strong> (Match-3 ECS-based game)
+        <div class="work-images">
+          <img src="icon/TeddyB_3.1.jpg" alt="Teddy's button">
+          <img src="icon/TeddyB_3.2.jpg" alt="Teddy's button">
+          <img src="icon/TeddyB_3.3.jpg" alt="Teddy's button">
+          <img src="icon/TeddyB_3.4.jpg" alt="Teddy's button">
+          <img src="icon/TeddyB_3.5.jpg" alt="Teddy's button">
+        </div>
+        <ul>
+          <li>Developed core game mechanics using LeoECS for improved performance.</li>
+          <li>Implemented UI/UX elements and animations with DOTween.</li>
+          <li>Integrated ads and in-game monetization via AdMob.</li>
+          <li>GitHub: <a href="https://github.com/ADS-GAME/Teddy-s-button">Teddy's Button</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Diablo Survival</strong>
+        <div class="work-images">
+          <img src="icon/Diablo2.1.jpg" alt="Diablo">
+          <img src="icon/Diablo2.2.jpg" alt="Diablo">
+          <img src="icon/Diablo2.3.jpg" alt="Diablo">
+          <img src="icon/Diablo2.4.jpg" alt="Diablo">
+          <img src="icon/Diablo2.5.jpg" alt="Diablo">
+        </div>
+        <ul>
+          <li>Worked on game logic, enemy AI, and physics simulations.</li>
+          <li>Designed and implemented UI elements and visual effects.</li>
+          <li>GitHub: <a href="https://github.com/YanPodsadchik/DiabloSurvival">DiabloSurvival</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Mria</strong> (prototype)
+        <div class="work-images">
+          <img src="icon/Mria2.1.jpg" alt="Mria">
+          <img src="icon/Mria2.2.jpg" alt="Mria">
+          <img src="icon/Mria2.3.jpg" alt="Mria">
+          <img src="icon/Mria2.4.jpg" alt="Mria">
+          <img src="icon/Mria2.5.jpg" alt="Mria">
+        </div>
+        <ul>
+          <li>Prototyped mechanics, player control and gameplay loops.</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Cell_Game</strong> (prototype)
+        <div class="work-images">
+          <img src="icon/Cell_2.1.jpg" alt="Cell_Game">
+          <img src="icon/Cell_2.2.jpg" alt="Cell_Game">
+          <img src="icon/Cell_2.3.jpg" alt="Cell_Game">
+          <img src="icon/Cell_2.4.jpg" alt="Cell_Game">
+          <img src="icon/Cell_2.5.jpg" alt="Cell_Game">
+        </div>
+        <ul>
+          <li>Developed core mechanics, UI, and animations.</li>
+          <li>GitHub: <a href="https://github.com/Jenyded/Cell_Game">Cell_Game</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Published Games</h2>
+    <table>
+      <tr>
+        <th>Game</th>
+        <th>Link</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Theater of Senses
+          <div><img src="icon/Theater1.jpg" alt="Theater"></div>
+        </td>
+        <td><a href="https://play.google.com/store/apps/details?id=com.aziadev.theaterofsenses">Play Store</a></td>
+        <td>A collection of interactive stories...</td>
+      </tr>
+      <tr>
+        <td>Formless
+          <div><img src="icon/Formless_icon1.png" alt="Formless"></div>
+        </td>
+        <td><a href="https://play.google.com/store/apps/details?id=com.JenyDed.Formless">Play Store</a></td>
+        <td>A small experimental game...</td>
+      </tr>
+    </table>
+
+    <h2>Courses & Training</h2>
+    <ul>
+      <li>METANIT.COM – C# (2023)</li>
+      <li>"C# from Zero to Pro"</li>
+      <li>Various self-learning resources</li>
+    </ul>
+
+    <h2>Career Goals & Expectations</h2>
+    <p>Seeking to gain additional commercial experience, contribute to creative projects, and grow as a Unity developer
+      by exploring advanced techniques and optimization approaches.</p>
+  </div>
 </body>
 
 </html>
